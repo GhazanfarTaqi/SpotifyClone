@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: antiquewhite;
+}
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+nav ul {
+    display:flex ;
+    align-items: center;
+    /* justify-content: flex-end; */
+    list-style-type: none;
+    height: 65px;
+    color: white;
+    background-color: black;
+}
+nav ul li{
+    padding: 0 15px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    /* justify-items: center; */
+    font-weight: bolder;
+    font-size: 1.3rem;
+    
+}
+.logo img{
+    width: 60px; ;
+    padding-right: 7px;
+    
+}
+.container{
+    min-height: 75vh;
+    font-family: 'Varela Round', sans-serif;
+    background-color: rgba(35, 35, 35, 0.923);
+    display: flex;
+    margin: 10px auto;
+    width: 60%;
+    border-radius: 10px;
+    /* justify-content: center; */
+    background-image:url("medium.jpg")  ;
+    background-size: 920px 555px;
+}
+.songlist h1 {
+    color: white;
+}
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.songinfo{
+    position: absolute;
+    left:20vw;
+    font-family: 'Varela Round', sans-serif;
+}
+.songinfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+.icons{
+    margin-top: 12px;
+}
+.icons i{
+    cursor: pointer;
+    padding: 0 5px;
+}
+#progressbar{
+    width: 60vw;
+    cursor: pointer;
+}
+.songitemscontainer{
+    margin-top: 25px;
+}
+.songItems{
+    height: 50px;
+    display:flex;
+    background-color: white;
+    margin:10px 0;
+    justify-content:space-between;
+    align-items: center;
+    border-radius: 12px;
+}
+.songItems img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50% ;
+    margin: 0 23px;
+}
+.timestamp{
+    padding: 0 10px;
+}
+.timestamp i {
+    cursor: pointer;
+}
